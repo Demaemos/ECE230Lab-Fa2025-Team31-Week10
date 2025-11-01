@@ -17,10 +17,10 @@ We learned about sequential logic and circuits that allow multiple bytes to be s
 ## Lab Questions
 
 ###  Why can we not just use structural Verilog to implement latches?
-Structural implementation of latches will remember their previous inputs but they will also throw combinational logic loop error and will not synthesize. We must use behavioral implementations so that verilog knows that we would like to work with registers.
+Structural implementation of latches will remember their previous inputs, but they will also throw a combinational logic loop error and will not synthesize. We must use behavioral implementations so that verilog knows that we would like to work with registers.
 
 ### What is the meaning of always @(*) in a sensitivity block?
 The always block allows us to use both continuous and sequential variable assignments. If we are to use register outputs, we must use the always command and tell vivado which signals the register outputs are sequentially dependant upon. 
 
 ### What importance is memory to digital circuits?
-Without memory, we would constantly read inputs and change outputs and would not be able to store data or wait for a combination of updates. By having memory, digital circuits can be made much more powerful by including wait-states/interupts, enables and disables, and data storage.
+Without memory, we would constantly read inputs and change outputs and would not be able to store data or wait for a combination of updates. By having memory, digital circuits can be made much more powerful by including wait-states/interrupts, enabling and disabling, and data storage.
